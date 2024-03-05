@@ -1,5 +1,5 @@
 {
-  "heading": "Crescendo - 2024",
+  "heading": "IMPI Scouting - 2024",
   "logo": "logo.png",
   "pages": [
     {
@@ -14,10 +14,9 @@
           }
         },
         {
-          "name": "Starting Position",
+          "name": "Click Starting Position",
           "type": "positions",
-          "file": "field.png",
-          "selectRadius": 10
+          "file": "field.png"
         }
       ]
     },
@@ -25,7 +24,7 @@
       "name": "Autonomous",
       "widgets": [
         {
-          "name": "Left Starting Zone",
+          "name": "Passed white line",
           "type": "checkbox"
         },
         {
@@ -41,34 +40,12 @@
           "name": "Speaker Notes",
           "type": "spinbox",
           "prefix": "Auto"
-        },
-        {
-          "name": "Trap Notes",
-          "type": "spinbox",
-          "max": 3,
-          "prefix": "Auto"
         }
       ]
     },
     {
       "name": "Teleop",
       "widgets": [
-        {
-          "name": "Picked Up From",
-          "type": "heading",
-          "colspan": 5,
-          "align": "center"
-        },
-        {
-          "name": "Ground",
-          "type": "spinbox"
-        },
-        {
-          "name": "Source",
-          "type": "spinbox",
-          "row": 2,
-          "col": 3
-        },
         {
           "name": "Scoring",
           "type": "heading",
@@ -80,26 +57,8 @@
           "type": "spinbox"
         },
         {
-          "name": "Amplified Speaker Notes",
-          "type": "spinbox",
-          "row": 4,
-          "col": 3
-        },
-        {
           "name": "Amp Notes",
           "type": "spinbox"
-        },
-        {
-          "name": "Trap Notes",
-          "type": "spinbox",
-          "max": 3,
-          "row": 5,
-          "col": 3
-        },
-        {
-          "name": "Co-op Bonus",
-          "type": "checkbox",
-          "col": 2
         },
         {
           "type": "spacer",
@@ -122,10 +81,6 @@
           "name": "Tipped",
           "type": "checkbox",
           "col": 2
-        },
-        {
-          "name": "Assists",
-          "type": "spinbox"
         }
       ]
     },
@@ -134,9 +89,8 @@
       "widgets": [
         {
           "name": "End Location",
-          "type": "radio",
+          "type": "dropdown",
           "options": [
-            "Onstage and Spotlit",
             "Onstage",
             "Parked",
             "None"
@@ -144,41 +98,16 @@
           "default": 3
         },
         {
-          "name": "Failed Climb",
+          "name": "Scored trap note",
           "type": "checkbox"
-        },
-        {
-          "name": "Robots Onstage",
-          "type": "multicheckbox",
-          "options": [
-            "Stage Left",
-            "Stage Right",
-            "Center Stage"
-          ]
-        },
-        {
-          "name": "Harmony",
-          "type": "checkbox"
-        },
-        {
-          "name": "Trap Note Positions",
-          "type": "multicheckbox",
-          "options": [
-            "Stage Left",
-            "Stage Right",
-            "Center Stage"
-          ]
-        },
-        {
-          "name": "Mechanical Failures",
-          "type": "text"
+
         },
         {
           "name": "Comments",
           "type": "textarea"
         },
         {
-          "name": "Stage Positions",
+          "name": "Stage Positions Diagram",
           "type": "heading",
           "colspan": 2,
           "align": "center"
